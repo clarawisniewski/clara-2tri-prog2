@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você aceita participar de um quizz para descobrir qual seu sentimento dominante?",
+        enunciado: "Você aceita participar desse quizz para compreender melhor seus sentimentos?",
         alternativas: [
             {
                 texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                afirmacao: "Você é uma pessoa sincera e extremamente realista,"
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                afirmacao: "Uau,"
             }
         ]
     },
@@ -22,12 +22,12 @@ const perguntas = [
         enunciado: "Você se considera na maioria das vezes, uma pessoa estressada ou calma?",
         alternativas: [
             {
-                texto: "Estressada.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Estressada",
+                afirmacao: "com as emoções muito a flor da pele!"
             },
             {
-                texto: "Calma.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Calma",
+                afirmacao: "você é uma pessoa amigável e sabe lidar muito bem com suas emoções!"
             }
         ]
     },
@@ -35,38 +35,38 @@ const perguntas = [
         enunciado: "Você se sente triste com que frequência?",
         alternativas: [
             {
-                texto: "É raro!",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Com facilidade",
+                afirmacao: "Obrigada pela interação com o quizz."
             },
             {
-                texto: "Me sinto triste com facilidade.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Raramente!",
+                afirmacao: "Muito obrigada pela interação com o quizz."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você é uma pessoa otimista ou pessimista na maior parte do tempo?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Pessimista, com certeza",
+                afirmacao: "Dica: leve a vida com mais leveza..."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Tento ser sempre otimista em meus dias!",
+                afirmacao: "Mantenha seu divertidamente assim,"
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "E por fim, você se considera uma pessoa corajosa? ",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Sou medroso (a)!",
+                afirmacao: "Seus dias serão melhores!!"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Simmm!",
+                afirmacao: "sempre alegre!"
             }
         ]
     },
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Parabéns!";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
